@@ -1,3 +1,4 @@
+# Вложенные квадраты и пирамида
 #|Название|Альтернативные задания|Код|Результат|
 |---|---|---|---|---|
 |1|5 линий цветов по 5||<a href = 'https://makecode.com/_DzHhfj4LJDmh'><img src = './img/flines.png'></a>|<img src = './img/flines_res.png'>|
