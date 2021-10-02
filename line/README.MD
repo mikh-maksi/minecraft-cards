@@ -8,3 +8,47 @@
 <img src = './img/morse_code_en.jpeg' width = 600> 
 <img src = './img/morse_code_ua.jpeg' width = 600>  
 <img src = './img/morse_code_ru.jpeg' width = 600>  
+
+## Азбука Морзе
+### Команды чата 
+Точка  
+<img src = "./img/dot.jpg" width = 600>  
+Тире  
+<img src = "./img/dash.jpg" width = 600>  
+Пробел    
+<img src = "./img/space.jpg" width = 600>  
+Написание букв командами в чате  
+<img src = "./img/dot-dash-space.jpg" width = 600>  
+
+### Функции
+Тире:  
+Создаем функцию  
+<img src = "./img/functions01.jpg" width = 600>     
+Даем название     
+<img src = "./img/functions02.jpg" width = 600>    
+Задаем код  
+<img src = "./img/dash-fnc.jpg" width = 600>   
+   
+Точка:   
+Создаем функцию  
+<img src = "./img/functions01.jpg" width = 600>   
+Даем название   
+<img src = "./img/functions04.jpg" width = 600>   
+Задаем код   
+<img src = "./img/space.jpg" width = 600>   
+Пробел:  
+Создаем функцию  
+<img src = "./img/functions01.jpg" width = 600>   
+
+Даем название   
+<img src = "./img/functions07.jpg" width = 600>   
+Задаем код    
+<img src = "./img/dot-fnc.jpg" width = 600>   
+
+### Задание и выполнение команды
+Создаем команду чата и переносим в нее блоки вызова функций   
+<img src = "./img/functions11.jpg" width = 600>   
+Задаем требуемую последовательность вызова команд  
+<img src = "./img/code.jpg" width = 600>    
+Вызываем созданную программу (команда чата max)    
+<img src = "./img/functions13.jpg" width = 600>    
