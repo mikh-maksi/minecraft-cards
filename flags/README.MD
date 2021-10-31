@@ -7,14 +7,19 @@
 |---|---|---|---|---|
 |1|Линия блоков| 1. 6 золотых <br> 2. 6 алмазных блоков <br> 3. 9 изумрудных блоков <br> 4. 12 железных блоков<br> 5. 15 угольных блоков|player.onChat("line", function () {<br>    agent.setItem(GOLD_BLOCK, 1, 1)<br>    agent.move(UP, 1)<br>    for (let index = 0; index < 6; index++) {<br>        agent.place(DOWN)<br>        agent.move(FORWARD, 1)<br>    }<br>    agent.move(DOWN, 1)<br>})|<img src = './img/screen-01.png' width=500>|
 
+
+# Прямоугольники
+Прямоугольник - это несколько линий одна рядом с другой. Реализовать это можно с помощью 2-х циклов.
+
 |#|Название|Альтернативные задания|Код|Результат|
 |---|---|---|---|---|
 |1|Линия блоков| 1. 6x6 белых бетонных блоков <br> 2. 6x4 красных бетонных блоков <br> 3. 12x8 зеленых бетонных блоков  <br> 4. 8х8 голубых бетонных блоков<br> 5. 10х10 черных бетонных блоков|player.onChat("square", function () {<br>    agent.setItem(BLUE_CONCRETE, 1, 1)<br>    agent.move(UP, 1)<br>    for (let index = 0; index < 4; index++) {<br>    for (let index = 0; index < 6; index++) {<br>        agent.place(DOWN)<br>        agent.move(FORWARD, 1)<br>    }<br>        agent.move(BACK, 6)<br>        agent.move(LEFT, 1)<br>    }<br>    agent.move(DOWN, 1)<br>})|<img src = './img/screen-02.png' width=500>|
 
-
+ # Флаги
+Флаги - это несколько разноцветных прямоугольников, которые размещаются рядом
 |#|Название|Альтернативные задания|Код|Результат|
 |---|---|---|---|---|
-|1|Линия блоков| 1. 6x6 белых бетонных блоков <br> 2. 6x4 красных бетонных блоков <br> 3. 12x8 зеленых бетонных блоков  <br> 4. 8х8 голубых бетонных блоков<br> 5. 10х10 черных бетонных блоков|player.onChat("ukr", function () {<br>    agent.move(UP, 1)<br>    agent.setItem(YELLOW_CONCRETE, 1, 1)<br>    for (let index = 0; index < 2; index++) {<br>    for (let index = 0; index < 6; index++) {<br>        agent.place(DOWN)<br>        agent.move(FORWARD, 1)<br>    }<br>        agent.move(BACK, 6)<br>        agent.move(LEFT, 1)<br>    }    agent.setItem(BLUE_CONCRETE, 1, 1)<br>    for (let index = 0; index < 2; index++) {<br>    for (let index = 0; index < 6; index++) {<br>        agent.place(DOWN)<br>        agent.move(FORWARD, 1)<br>    }<br>        agent.move(BACK, 6)<br>        agent.move(LEFT, 1)<br>    }<br>    agent.move(DOWN, 1)<br>})|<img src = './img/screen-03.png' width=500>|
+|1|Линия блоков| 1. Флаг Украины <br> 2. Флаг Польши <br> 3. Флаг Венгрии <br> 4. Флаг Болгарии<br> 5. Флаг Австрии |player.onChat("ukr", function () {<br>    agent.move(UP, 1)<br>    agent.setItem(YELLOW_CONCRETE, 1, 1)<br>    for (let index = 0; index < 2; index++) {<br>    for (let index = 0; index < 6; index++) {<br>        agent.place(DOWN)<br>        agent.move(FORWARD, 1)<br>    }<br>        agent.move(BACK, 6)<br>        agent.move(LEFT, 1)<br>    }    agent.setItem(BLUE_CONCRETE, 1, 1)<br>    for (let index = 0; index < 2; index++) {<br>    for (let index = 0; index < 6; index++) {<br>        agent.place(DOWN)<br>        agent.move(FORWARD, 1)<br>    }<br>        agent.move(BACK, 6)<br>        agent.move(LEFT, 1)<br>    }<br>    agent.move(DOWN, 1)<br>})|<img src = './img/screen-03.png' width=500>|
 
 
 # Задания
