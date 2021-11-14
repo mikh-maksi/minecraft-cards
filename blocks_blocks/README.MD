@@ -88,52 +88,15 @@ TORCH - факел
 
 ## Узоры и усложнения
 С помощью размещения блоков и циклов можно строить различные узоры:
- ```js
-player.onItemInteracted(STONE_SHOVEL, function () {
-    for (let index = 0; index <= 10; index++) {
-        if (index % 2 == 0) {
-            blocks.place(LAPIS_LAZULI_BLOCK, pos(1, 0, index))
-            blocks.place(GOLD_BLOCK, pos(2, 0, index))
-        } else {
-            blocks.place(GOLD_BLOCK, pos(1, 0, index))
-            blocks.place(LAPIS_LAZULI_BLOCK, pos(2, 0, index))
-        }
-    }
-})
-```
-<img src = "img/doble_blocks.png">
+<img src = "img/blocksmod2_2.png">  
 
-Также с помощью кодов можно сделать сложные флаги:
-```js
-player.onItemInteracted(WOODEN_SHOVEL, function () {
-    blocks.place(RED_CONCRETE, pos(1, 0, 0))
-    blocks.place(RED_CONCRETE, pos(2, 0, 0))
-    blocks.place(RED_CONCRETE, pos(3, 0, 0))
-    blocks.place(RED_CONCRETE, pos(4, 0, 0))
-    blocks.place(RED_CONCRETE, pos(5, 0, 0))
-    blocks.place(RED_CONCRETE, pos(1, 0, 1))
-    blocks.place(RED_CONCRETE, pos(2, 0, 1))
-    blocks.place(WHITE_CONCRETE, pos(3, 0, 1))
-    blocks.place(RED_CONCRETE, pos(4, 0, 1))
-    blocks.place(RED_CONCRETE, pos(5, 0, 1))
-    blocks.place(RED_CONCRETE, pos(1, 0, 2))
-    blocks.place(WHITE_CONCRETE, pos(2, 0, 2))
-    blocks.place(WHITE_CONCRETE, pos(3, 0, 2))
-    blocks.place(WHITE_CONCRETE, pos(4, 0, 2))
-    blocks.place(RED_CONCRETE, pos(5, 0, 2))
-    blocks.place(RED_CONCRETE, pos(1, 0, 3))
-    blocks.place(RED_CONCRETE, pos(2, 0, 3))
-    blocks.place(WHITE_CONCRETE, pos(3, 0, 3))
-    blocks.place(RED_CONCRETE, pos(4, 0, 3))
-    blocks.place(RED_CONCRETE, pos(5, 0, 3))
-    blocks.place(RED_CONCRETE, pos(1, 0, 4))
-    blocks.place(RED_CONCRETE, pos(2, 0, 4))
-    blocks.place(RED_CONCRETE, pos(3, 0, 4))
-    blocks.place(RED_CONCRETE, pos(4, 0, 4))
-    blocks.place(RED_CONCRETE, pos(5, 0, 4))
-})
 
-```
+
+<img src = "img/doble_blocks.png">  
+  
+Также с помощью кодов можно сделать сложные флаги:  
+<img src = "img/swith_flag_block_code.png">
+
 <img src = "img/swith_flag_blocks.png">  
 
 
@@ -146,42 +109,15 @@ player.onItemInteracted(WOODEN_SHOVEL, function () {
 <img src = "img/flag_japan.jpeg" width=250>  
 
 ## Программирование букв
-Вы можете в размере 5x5 блоков реализовать буквы:  
-```js
-player.onItemInteracted(GOLDEN_SHOVEL, function () {
-    blocks.place(WHITE_CONCRETE, pos(1, 0, 0))
-    blocks.place(WHITE_CONCRETE, pos(2, 0, 0))
-    blocks.place(WHITE_CONCRETE, pos(3, 0, 0))
-    blocks.place(WHITE_CONCRETE, pos(4, 0, 0))
-    blocks.place(WHITE_CONCRETE, pos(5, 0, 0))
-    blocks.place(WHITE_CONCRETE, pos(1, 0, 1))
-    blocks.place(RED_CONCRETE, pos(2, 0, 1))
-    blocks.place(WHITE_CONCRETE, pos(3, 0, 1))
-    blocks.place(RED_CONCRETE, pos(4, 0, 1))
-    blocks.place(RED_CONCRETE, pos(5, 0, 1))
-    blocks.place(WHITE_CONCRETE, pos(1, 0, 2))
-    blocks.place(RED_CONCRETE, pos(2, 0, 2))
-    blocks.place(WHITE_CONCRETE, pos(3, 0, 2))
-    blocks.place(RED_CONCRETE, pos(4, 0, 2))
-    blocks.place(RED_CONCRETE, pos(5, 0, 2))
-    blocks.place(WHITE_CONCRETE, pos(1, 0, 3))
-    blocks.place(RED_CONCRETE, pos(2, 0, 3))
-    blocks.place(WHITE_CONCRETE, pos(3, 0, 3))
-    blocks.place(RED_CONCRETE, pos(4, 0, 3))
-    blocks.place(RED_CONCRETE, pos(5, 0, 3))
-    blocks.place(WHITE_CONCRETE, pos(1, 0, 4))
-    blocks.place(WHITE_CONCRETE, pos(2, 0, 4))
-    blocks.place(WHITE_CONCRETE, pos(3, 0, 4))
-    blocks.place(WHITE_CONCRETE, pos(4, 0, 4))
-    blocks.place(WHITE_CONCRETE, pos(5, 0, 4))
-})
-```
+Вы можете в размере 5x5 блоков реализовать буквы: 
+
+<img src = "img/letter_a_block_code.png">
 
 <img src = "img/letter_a.png">
 
 |#|Дополниительные задания|Код|внешний вид|
 |---|---|---|---|
-|4|1. Создайте из блоков букву A<br>2. Создайте из блоков букву B<br>3. Создайте из блоков букву C<br>4. Создайте из блоков букву D<br>1. Создайте из блоков букву F<br>|player.onItemInteracted(GOLDEN_SHOVEL, function () {<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(2, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(4, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(5, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 1))<br>    blocks.place(RED_CONCRETE, pos(2, 0, 1))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 1))<br>    blocks.place(RED_CONCRETE, pos(4, 0, 1))<br>    blocks.place(RED_CONCRETE, pos(5, 0, 1))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 2))<br>    blocks.place(RED_CONCRETE, pos(2, 0, 2))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 2))<br>    blocks.place(RED_CONCRETE, pos(4, 0, 2))<br>    blocks.place(RED_CONCRETE, pos(5, 0, 2))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 3))<br>    blocks.place(RED_CONCRETE, pos(2, 0, 3))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 3))<br>    blocks.place(RED_CONCRETE, pos(4, 0, 3))<br>    blocks.place(RED_CONCRETE, pos(5, 0, 3))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(2, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(4, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(5, 0, 4))<br>})|<img src = "img/letter_a.png" width = 300>|
+|4|1. Создайте из блоков букву A<br>2. Создайте из блоков букву B<br>3. Создайте из блоков букву C<br>4. Создайте из блоков букву D<br>1. Создайте из блоков букву F<br>|<img src = "img/letter_a_block_code.png">|<img src = "img/letter_a.png" width = 300>|
 
 
 **Творческое задание:**
