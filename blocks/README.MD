@@ -144,3 +144,43 @@ player.onItemInteracted(STONE_SHOVEL, function () {
 })
 ```
 <img src = "img/doble_blocks.png">
+
+Также с помощью кодов можно сделать сложные флаги:
+```js
+player.onItemInteracted(WOODEN_SHOVEL, function () {
+    blocks.place(RED_CONCRETE, pos(1, 0, 0))
+    blocks.place(RED_CONCRETE, pos(2, 0, 0))
+    blocks.place(RED_CONCRETE, pos(3, 0, 0))
+    blocks.place(RED_CONCRETE, pos(4, 0, 0))
+    blocks.place(RED_CONCRETE, pos(5, 0, 0))
+    blocks.place(RED_CONCRETE, pos(1, 0, 1))
+    blocks.place(RED_CONCRETE, pos(2, 0, 1))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 1))
+    blocks.place(RED_CONCRETE, pos(4, 0, 1))
+    blocks.place(RED_CONCRETE, pos(5, 0, 1))
+    blocks.place(RED_CONCRETE, pos(1, 0, 2))
+    blocks.place(WHITE_CONCRETE, pos(2, 0, 2))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 2))
+    blocks.place(WHITE_CONCRETE, pos(4, 0, 2))
+    blocks.place(RED_CONCRETE, pos(5, 0, 2))
+    blocks.place(RED_CONCRETE, pos(1, 0, 3))
+    blocks.place(RED_CONCRETE, pos(2, 0, 3))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 3))
+    blocks.place(RED_CONCRETE, pos(4, 0, 3))
+    blocks.place(RED_CONCRETE, pos(5, 0, 3))
+    blocks.place(RED_CONCRETE, pos(1, 0, 4))
+    blocks.place(RED_CONCRETE, pos(2, 0, 4))
+    blocks.place(RED_CONCRETE, pos(3, 0, 4))
+    blocks.place(RED_CONCRETE, pos(4, 0, 4))
+    blocks.place(RED_CONCRETE, pos(5, 0, 4))
+})
+
+```
+<img src = "img/swith_flag_blocks.png">  
+
+**Специальное задание:** с помощьюю помещения блоков по координатам создайте флаги различных стран:  
+<img src = "img/flag_sweeden.png" width=250>  
+<img src = "img/flag_finland.png" width=250>  
+<img src = "img/flag_scotland.png" width=250>  
+<img src = "img/flag_japan.jpeg" width=250>  
+
