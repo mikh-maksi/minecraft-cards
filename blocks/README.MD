@@ -10,6 +10,12 @@ player.onChat("п", function () {
 
 
 Такой код - позволяет **"пробивать землю"**, для этого игрок должен начать падать (**FALL**)
+
+
+Координаты в Minecraft распределяются так:
+<img src = "img/blocks_xyz_code.jpg">
+
+
 ```js
 player.onTravelled(FALL, function () {
     player.runChatCommand("п")
@@ -74,6 +80,9 @@ player.onItemInteracted(IRON_SHOVEL, function () {
 **Творческое задание:** построить "город" - 10+ зданий из различных материалов.
 
 
+## Циклы и блоки
+
+С помощью блоков можно строить линии на земле из блоков: 
 ```js
 player.onItemInteracted(IRON_SHOVEL, function () {
     blocks.fill(
