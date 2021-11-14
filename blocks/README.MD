@@ -178,9 +178,55 @@ player.onItemInteracted(WOODEN_SHOVEL, function () {
 ```
 <img src = "img/swith_flag_blocks.png">  
 
+
+
+
 **Специальное задание:** с помощьюю помещения блоков по координатам создайте флаги различных стран:  
 <img src = "img/flag_sweeden.png" width=250>  
 <img src = "img/flag_finland.png" width=250>  
 <img src = "img/flag_scotland.png" width=250>  
 <img src = "img/flag_japan.jpeg" width=250>  
 
+## Программирование букв
+Вы можете в размере 5x5 блоков реализовать буквы:  
+```js
+player.onItemInteracted(GOLDEN_SHOVEL, function () {
+    blocks.place(WHITE_CONCRETE, pos(1, 0, 0))
+    blocks.place(WHITE_CONCRETE, pos(2, 0, 0))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 0))
+    blocks.place(WHITE_CONCRETE, pos(4, 0, 0))
+    blocks.place(WHITE_CONCRETE, pos(5, 0, 0))
+    blocks.place(WHITE_CONCRETE, pos(1, 0, 1))
+    blocks.place(RED_CONCRETE, pos(2, 0, 1))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 1))
+    blocks.place(RED_CONCRETE, pos(4, 0, 1))
+    blocks.place(RED_CONCRETE, pos(5, 0, 1))
+    blocks.place(WHITE_CONCRETE, pos(1, 0, 2))
+    blocks.place(RED_CONCRETE, pos(2, 0, 2))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 2))
+    blocks.place(RED_CONCRETE, pos(4, 0, 2))
+    blocks.place(RED_CONCRETE, pos(5, 0, 2))
+    blocks.place(WHITE_CONCRETE, pos(1, 0, 3))
+    blocks.place(RED_CONCRETE, pos(2, 0, 3))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 3))
+    blocks.place(RED_CONCRETE, pos(4, 0, 3))
+    blocks.place(RED_CONCRETE, pos(5, 0, 3))
+    blocks.place(WHITE_CONCRETE, pos(1, 0, 4))
+    blocks.place(WHITE_CONCRETE, pos(2, 0, 4))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 4))
+    blocks.place(WHITE_CONCRETE, pos(4, 0, 4))
+    blocks.place(WHITE_CONCRETE, pos(5, 0, 4))
+})
+```
+
+<img src = "img/letter_a.png">
+
+|#|Дополниительные задания|Код|внешний вид|
+|---|---|---|---|
+|4|1. Создайте из блоков букву A<br>2. Создайте из блоков букву B<br>3. Создайте из блоков букву C<br>4. Создайте из блоков букву D<br>1. Создайте из блоков букву F<br>|player.onItemInteracted(GOLDEN_SHOVEL, function () {<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(2, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(4, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(5, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 1))<br>    blocks.place(RED_CONCRETE, pos(2, 0, 1))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 1))<br>    blocks.place(RED_CONCRETE, pos(4, 0, 1))<br>    blocks.place(RED_CONCRETE, pos(5, 0, 1))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 2))<br>    blocks.place(RED_CONCRETE, pos(2, 0, 2))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 2))<br>    blocks.place(RED_CONCRETE, pos(4, 0, 2))<br>    blocks.place(RED_CONCRETE, pos(5, 0, 2))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 3))<br>    blocks.place(RED_CONCRETE, pos(2, 0, 3))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 3))<br>    blocks.place(RED_CONCRETE, pos(4, 0, 3))<br>    blocks.place(RED_CONCRETE, pos(5, 0, 3))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(2, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(4, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(5, 0, 4))<br>})|<img src = "img/letter_a.png" width = 300>|
+
+
+**Творческое задание:**
+1. Напишите с помощью блоков свое имя
+2. Напишите с помощью блоков сообщение для ребят в вашей группе
+3. Напишите ваше имя буквами и под ними - азбукой Морзе.
