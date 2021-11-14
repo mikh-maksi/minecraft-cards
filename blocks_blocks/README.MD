@@ -63,33 +63,128 @@ TORCH - факел
 ## Циклы и блоки
 
 С помощью блоков можно строить линии на земле из блоков: 
-```js
-player.onItemInteracted(IRON_SHOVEL, function () {
-    blocks.fill(
-    LAPIS_LAZULI_BLOCK,
-    pos(0, 0, 0),
-    pos(0, 0, 10),
-    FillOperation.Replace
-    )
-})
+<img src = "img/block_line_block.png">
 
-```
 
-```js
-player.onItemInteracted(IRON_SHOVEL, function () {
-    blocks.fill(
-    LAPIS_LAZULI_BLOCK,
-    pos(0, 0, 0),
-    pos(0, 0, 10),
-    FillOperation.Replace
-    )
-})
-```
+<img src = "img/blocks_line.png" width = 150>
 
-```js
+Но точно такого же эффекта можно добиться, если заполнять не область, а ставить 10 раз блок, увеличивая координату в цикле на 1 каждый раз
+
+
+<img src = "img/loop.jpg">    
+  
+<img src = "img/blocks_line.png" width = 150>
+
+Использование циклов позволяет строить "умные линии"
+<img src = "img/linemod2.png">  
+
+
+<img src = "img/dif_blocks.png" width = 150>
+
+|#|Дополниительные задания|Код|внешний вид|
+|---|---|---|---|
+|3|1. Сделать последовательность из 10 чередующихся лазуритных и золотых блоков.<br>2. Сделать последовательность из 7 чередующихся изумрудных и алмазных блоков, начиная с изумрудного.<br>3. Сделать последовательность из 5 любых блоков и 5 блоков воздуха<br> 4. Посадить 8 чередующихся цветов (на ваш выбор)<br>5.Поставить 12 чередующихся блоков и цветов|<img src = "img/linemod2.png" width = 200>  |<img src = "img/dif_blocks.png" width = 80>|
+
+
+## Узоры и усложнения
+С помощью размещения блоков и циклов можно строить различные узоры:
+ ```js
 player.onItemInteracted(STONE_SHOVEL, function () {
-    for (let index = 0; index <= 5; index++) {
-        blocks.place(LAPIS_LAZULI_BLOCK, pos(0, 0, index))
+    for (let index = 0; index <= 10; index++) {
+        if (index % 2 == 0) {
+            blocks.place(LAPIS_LAZULI_BLOCK, pos(1, 0, index))
+            blocks.place(GOLD_BLOCK, pos(2, 0, index))
+        } else {
+            blocks.place(GOLD_BLOCK, pos(1, 0, index))
+            blocks.place(LAPIS_LAZULI_BLOCK, pos(2, 0, index))
+        }
     }
 })
 ```
+<img src = "img/doble_blocks.png">
+
+Также с помощью кодов можно сделать сложные флаги:
+```js
+player.onItemInteracted(WOODEN_SHOVEL, function () {
+    blocks.place(RED_CONCRETE, pos(1, 0, 0))
+    blocks.place(RED_CONCRETE, pos(2, 0, 0))
+    blocks.place(RED_CONCRETE, pos(3, 0, 0))
+    blocks.place(RED_CONCRETE, pos(4, 0, 0))
+    blocks.place(RED_CONCRETE, pos(5, 0, 0))
+    blocks.place(RED_CONCRETE, pos(1, 0, 1))
+    blocks.place(RED_CONCRETE, pos(2, 0, 1))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 1))
+    blocks.place(RED_CONCRETE, pos(4, 0, 1))
+    blocks.place(RED_CONCRETE, pos(5, 0, 1))
+    blocks.place(RED_CONCRETE, pos(1, 0, 2))
+    blocks.place(WHITE_CONCRETE, pos(2, 0, 2))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 2))
+    blocks.place(WHITE_CONCRETE, pos(4, 0, 2))
+    blocks.place(RED_CONCRETE, pos(5, 0, 2))
+    blocks.place(RED_CONCRETE, pos(1, 0, 3))
+    blocks.place(RED_CONCRETE, pos(2, 0, 3))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 3))
+    blocks.place(RED_CONCRETE, pos(4, 0, 3))
+    blocks.place(RED_CONCRETE, pos(5, 0, 3))
+    blocks.place(RED_CONCRETE, pos(1, 0, 4))
+    blocks.place(RED_CONCRETE, pos(2, 0, 4))
+    blocks.place(RED_CONCRETE, pos(3, 0, 4))
+    blocks.place(RED_CONCRETE, pos(4, 0, 4))
+    blocks.place(RED_CONCRETE, pos(5, 0, 4))
+})
+
+```
+<img src = "img/swith_flag_blocks.png">  
+
+
+
+
+**Специальное задание:** с помощьюю помещения блоков по координатам создайте флаги различных стран:  
+<img src = "img/flag_sweeden.png" width=250>  
+<img src = "img/flag_finland.png" width=250>  
+<img src = "img/flag_scotland.png" width=250>  
+<img src = "img/flag_japan.jpeg" width=250>  
+
+## Программирование букв
+Вы можете в размере 5x5 блоков реализовать буквы:  
+```js
+player.onItemInteracted(GOLDEN_SHOVEL, function () {
+    blocks.place(WHITE_CONCRETE, pos(1, 0, 0))
+    blocks.place(WHITE_CONCRETE, pos(2, 0, 0))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 0))
+    blocks.place(WHITE_CONCRETE, pos(4, 0, 0))
+    blocks.place(WHITE_CONCRETE, pos(5, 0, 0))
+    blocks.place(WHITE_CONCRETE, pos(1, 0, 1))
+    blocks.place(RED_CONCRETE, pos(2, 0, 1))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 1))
+    blocks.place(RED_CONCRETE, pos(4, 0, 1))
+    blocks.place(RED_CONCRETE, pos(5, 0, 1))
+    blocks.place(WHITE_CONCRETE, pos(1, 0, 2))
+    blocks.place(RED_CONCRETE, pos(2, 0, 2))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 2))
+    blocks.place(RED_CONCRETE, pos(4, 0, 2))
+    blocks.place(RED_CONCRETE, pos(5, 0, 2))
+    blocks.place(WHITE_CONCRETE, pos(1, 0, 3))
+    blocks.place(RED_CONCRETE, pos(2, 0, 3))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 3))
+    blocks.place(RED_CONCRETE, pos(4, 0, 3))
+    blocks.place(RED_CONCRETE, pos(5, 0, 3))
+    blocks.place(WHITE_CONCRETE, pos(1, 0, 4))
+    blocks.place(WHITE_CONCRETE, pos(2, 0, 4))
+    blocks.place(WHITE_CONCRETE, pos(3, 0, 4))
+    blocks.place(WHITE_CONCRETE, pos(4, 0, 4))
+    blocks.place(WHITE_CONCRETE, pos(5, 0, 4))
+})
+```
+
+<img src = "img/letter_a.png">
+
+|#|Дополниительные задания|Код|внешний вид|
+|---|---|---|---|
+|4|1. Создайте из блоков букву A<br>2. Создайте из блоков букву B<br>3. Создайте из блоков букву C<br>4. Создайте из блоков букву D<br>1. Создайте из блоков букву F<br>|player.onItemInteracted(GOLDEN_SHOVEL, function () {<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(2, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(4, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(5, 0, 0))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 1))<br>    blocks.place(RED_CONCRETE, pos(2, 0, 1))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 1))<br>    blocks.place(RED_CONCRETE, pos(4, 0, 1))<br>    blocks.place(RED_CONCRETE, pos(5, 0, 1))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 2))<br>    blocks.place(RED_CONCRETE, pos(2, 0, 2))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 2))<br>    blocks.place(RED_CONCRETE, pos(4, 0, 2))<br>    blocks.place(RED_CONCRETE, pos(5, 0, 2))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 3))<br>    blocks.place(RED_CONCRETE, pos(2, 0, 3))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 3))<br>    blocks.place(RED_CONCRETE, pos(4, 0, 3))<br>    blocks.place(RED_CONCRETE, pos(5, 0, 3))<br>    blocks.place(WHITE_CONCRETE, pos(1, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(2, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(3, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(4, 0, 4))<br>    blocks.place(WHITE_CONCRETE, pos(5, 0, 4))<br>})|<img src = "img/letter_a.png" width = 300>|
+
+
+**Творческое задание:**
+1. Напишите с помощью блоков свое имя
+2. Напишите с помощью блоков сообщение для ребят в вашей группе
+3. Напишите ваше имя буквами и под ними - азбукой Морзе.
