@@ -81,3 +81,66 @@ player.onItemInteracted(WOODEN_SHOVEL, function () {
 
 
 ```
+
+```js
+player.onItemInteracted(STONE_SHOVEL, function () {
+    blocks.fill(
+    WHITE_CONCRETE,
+    pos(-5, -2, 0),
+    pos(5, -1, 10),
+    FillOperation.Replace
+    )
+    agent.teleport(pos(0, 0, 0), EAST)
+    agent.setItem(BLACK_CONCRETE, 1, 1)
+    for (let index = 0; index <= 3; index++) {
+        for (let index2 = 0; index2 < 4; index2++) {
+            for (let index2 = 0; index2 < (3 - index) * 2 - 1; index2++) {
+                agent.move(FORWARD, 1)
+                agent.move(RIGHT, 1)
+                agent.destroy(DOWN)
+                agent.place(DOWN)
+            }
+            agent.turn(RIGHT_TURN)
+        }
+        agent.move(RIGHT, 2)
+    }
+})
+
+
+```
+
+
+```js
+
+player.onItemInteracted(STONE_SHOVEL, function () {
+    blocks.fill(
+    WHITE_CONCRETE,
+    pos(-5, -2, 0),
+    pos(5, -1, 10),
+    FillOperation.Replace
+    )
+    agent.teleport(pos(0, 0, 0), EAST)
+    agent.setItem(BLACK_CONCRETE, 1, 1)
+    agent.setItem(RED_CONCRETE, 1, 2)
+    for (let index = 0; index <= 3; index++) {
+        if (index == 0) {
+            agent.setSlot(1)
+        } else {
+            agent.setSlot(2)
+        }
+        for (let index2 = 0; index2 < 4; index2++) {
+            for (let index2 = 0; index2 < (3 - index) * 2 - 1; index2++) {
+                agent.move(FORWARD, 1)
+                agent.move(RIGHT, 1)
+                agent.destroy(DOWN)
+                agent.place(DOWN)
+            }
+            agent.turn(RIGHT_TURN)
+        }
+        agent.move(RIGHT, 2)
+    }
+})
+
+
+
+```
