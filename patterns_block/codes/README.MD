@@ -57,3 +57,27 @@ player.onItemInteracted(IRON_SHOVEL, function () {
 })
 
 ```
+
+```js
+player.onItemInteracted(WOODEN_SHOVEL, function () {
+    blocks.fill(
+    WHITE_CONCRETE,
+    pos(-5, -2, 0),
+    pos(5, -1, 10),
+    FillOperation.Replace
+    )
+    agent.teleport(pos(0, 0, 0), EAST)
+    agent.setItem(BLACK_CONCRETE, 1, 1)
+    for (let index = 0; index < 4; index++) {
+        for (let index = 0; index < 5; index++) {
+            agent.move(FORWARD, 1)
+            agent.move(RIGHT, 1)
+            agent.destroy(DOWN)
+            agent.place(DOWN)
+        }
+        agent.turn(RIGHT_TURN)
+    }
+})
+
+
+```
