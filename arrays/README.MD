@@ -1,0 +1,5 @@
+# Массивы
+Массивы позволяют хранить информацию
+|#|Альтернативное задание|Код|Результат|
+|---|---|---|---|
+|1|1. Построить дорогу из 7 блоков. Основа дороги из черных блоков бетона, разметка - из белых блоков бетона по схеме (бччбчччб)<br>2. Построй однополосную дорогу: основа из черного бетона, разметка из белого бетона по схеме (бчччб)<br>3. Построй "велодорожку": основа из черного бетона, разметка из белого бетона по схеме (чбч) |let ar: number[] = []<br>player.onChat("road", function () {<br>agent.setItem(BLACK_CONCRETE, 1, 1)<br>agent.setItem(WHITE_CONCRETE, 1, 2)<br>ar = [2,1,1,2,1,1,2]<br>for (let index = 0; index < 20; index++) {<br>for (let value of ar) {<br>agent.setSlot(value)<br>agent.destroy(DOWN)<br>agent.place(DOWN)<br>agent.move(RIGHT, 1)<br>}<br>agent.move(LEFT, 7)<br>agent.move(FORWARD, 1)<br>}<br>})|<img src = "img/road01.png">|
