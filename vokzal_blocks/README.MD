@@ -32,6 +32,12 @@
 |---|---|---|---|
 |4|1. Очистить пространство, заполнив блоками воздуха от (0;4;0) до (30;23;-17), а пространство между  от (0;3;0) до (30;3;-17)|<img src  = "img/clear.png" width = 300>|<img src  = "img/clear_build.gif">|
 
+## Постройка перекрытий
+|Номер|Задания|Код|Изображение|
+|---|---|---|---|
+|5|1. Построить верхнюю часть вокзала|<img src = "img/statues.png" width = 300>  <img src = "img/up1.png"  width = 300><img src = "img/up2.png"  width = 300><img src = "img/ground.png"  width = 300><img src = "img/block.png"  width = 300>|<img src = "img/up_build.gif">|
+
+
 
 
 
