@@ -21,4 +21,4 @@
 ## Построить мост 3
 |#|Задания|Код|Результат|
 |---|---|---|---|
-|3|Постройте рельсы, идущие ровно над землей|<img src = "img/downrail_block.png"> <img src = "img/flatrail_command.png">|<img src = "img/flatrail.png">|
+|3|Постройте рельсы, идущие ровно над землей|<img src = "img/downrail_block.png"> <img src = "img/downrail_command.png">|<img src = "img/downrail.png">|
