@@ -101,7 +101,6 @@ player.onChat("downrail", function () {
 ```
 ### Дополнительное задание
 Объедините все функцию в одну и запустите:  
-<img src = "img/totalrail.png" width=300>
 
 ```js
 player.onChat("totalrail", function () {
