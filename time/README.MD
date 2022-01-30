@@ -62,4 +62,4 @@
 
 |№|Задание|Кода|Результат|
 |---|---|---|---|
-|2|1. Сделайте сообщение с текущем временем через каждые 100 секунд, начиная с рассвета.|---|---|
+|2|1. Сделайте сообщение с текущем временем через каждые 100 секунд, начиная с рассвета.|<img src = "img/timetable01.png" width = 300><br><img src = "img/timetable02.png" width = 300><br><img src = "img/timetable03.png" width = 300><br><img src = "img/timetable04.png" width = 300><br><img src = "img/timetable05.png" width = 300><br><img src = "img/timetable06.png" width = 300><br>|---|
