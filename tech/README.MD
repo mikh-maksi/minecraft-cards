@@ -126,3 +126,22 @@ Google - создал большое количество сервисов, и �
   
 <img src = "img/joxi22.png">  
 
+## Loom
+<img src = "img/loom01.jpg">  
+<img src = "img/loom02.jpg">  
+<img src = "img/loom03.jpg">  
+<img src = "img/loom04.jpg">  
+<img src = "img/loom05.jpg">  
+<img src = "img/loom06.jpg">  
+<img src = "img/loom07.jpg">  
+<img src = "img/loom08.jpg">  
+<img src = "img/loom09.jpg">  
+<img src = "img/loom10.jpg">  
+<img src = "img/loom11.jpg">  
+<img src = "img/loom12.jpg">  
+<img src = "img/loom13.jpg">  
+<img src = "img/loom14.jpg">  
+<img src = "img/loom15.jpg">  
+<img src = "img/loom16.jpg">  
+
+
