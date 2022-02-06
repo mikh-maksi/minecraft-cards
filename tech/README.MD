@@ -144,4 +144,22 @@ Google - создал большое количество сервисов, и �
 <img src = "img/loom15.jpg">  
 <img src = "img/loom16.jpg">  
 
-
+## Shutcut
+Для скачивания программы для обработки видео воспользуемся бесплатным программным обеспечением Shotcut. Скачаем его с официального сайта https://www.shotcut.org/download/  
+<img src = "img/Shotcut01.jpg">  
+<img src = "img/Shotcut02.jpg">  
+<img src = "img/Shotcut03.jpg">  
+<img src = "img/Shotcut04.jpg">  
+<img src = "img/Shotcut05.jpg">  
+<img src = "img/Shotcut06.jpg">  
+<img src = "img/Shotcut07.jpg">  
+<img src = "img/Shotcut08.jpg">  
+<img src = "img/Shotcut09.jpg">  
+<img src = "img/Shotcut10.jpg">  
+<img src = "img/Shotcut11.jpg">  
+<img src = "img/Shotcut12.jpg">  
+<img src = "img/Shotcut13.jpg">  
+<img src = "img/Shotcut14.jpg">  
+<img src = "img/Shotcut15.jpg">  
+<img src = "img/Shotcut16.jpg">  
+<img src = "img/Shotcut17.jpg">  
