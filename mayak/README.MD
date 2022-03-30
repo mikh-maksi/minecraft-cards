@@ -34,36 +34,15 @@ https://makecode.com/_fpiF35PCsKEP
 ## Основа маяка
 #|Задания|Код|Результат|
 |---|---|---|---|
-|3|---|---|---|
+|3||<img src = "img/base_01.png" width = 300>|<img src = "img/base_02.png" width = 300>|
 
 
 ## Верхняя часть маяка
 <img src = "img/pyramid_01.png">  
 <img src = "img/pyramid_02.png">  
 
-## Стороны света.
-Компас - направления ветров.
+## Маяк целиком
 
-## Роза ветров
-(увеличить в 2 раза).
+<img src = "img/mayak_result_01.png">  
 
 
-
-<img src = "img/rose_base_code_01.png">  
-<img src = "img/rose_base_code_02.png">  
-<img src = "img/rose_base_code_03.png">  
-
-## Роза на кубе
-<img src = "img/rose_base_aboveblock.png">
-
-
-## Роза вверх
-<img src = "img/rose_cycle.png">  
-
-<img src = "img/rose_cycle_code_01.png">  
-<img src = "img/rose_cycle_code_02.png">  
-<img src = "img/rose_cycle_code_03.png">  
-
-## Маяк
-
-https://makecode.com/_g6KfL1YbYb7F
