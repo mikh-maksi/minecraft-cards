@@ -173,5 +173,44 @@ GitHub.com має можливість відображати HTML+CSS код у
 27. Даний результат можна відображати за посиланням.
 <img src = "img/github32.png">  
 
+## Додамо інформацію до гри через посилання-кнопку в NPC  
+1. Увімкнемо режим "Творець світу" 
+<img src = "img/npchtml07.png">    
+
+2. Зайдемо в NPC (натиснемо правою клавішею на NPC)  
+<img src = "img/npchtml01.png">    
+
+3. Зайдемо в "Розширені параметри"  
+<img src = "img/npchtml02.png">   
+
+4. Натиснемо кнопку "Додати URL-адресу"  
+<img src = "img/npchtml03.png">    
+  
+5. Вставимо посилання на опис гри
+<img src = "img/npchtml04.png">    
+  
+6. Вийдемо із даного вікна
+<img src = "img/npchtml05.png">   
+  
+7. Закриємо налаштування NPC
+<img src = "img/npchtml06.png">    
+  
+8. Виключимо режим "Творець світу"
+<img src = "img/npchtml07.png">    
+   
+<img src = "img/npchtml08.png">    
+
+9. Зайдемо в NPC (натиснемо правою клавішею)  
+<img src = "img/npchtml09.png">    
+
+10. Натиснемо на кнопку "Докладніше"  
+<img src = "img/npchtml10.png">  
+  
+11. Побачемо сайт, на який давали посилання  
+<img src = "img/npchtml11.png">    
+
+
+
+
 
 
