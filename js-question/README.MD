@@ -211,6 +211,8 @@ arr.forEach(element => {
     padding:5px;
 }
 ```
+<img src = "img/creative.gif">
+
 
 ## Супертворче завдання
 1. Попередній код завантажте на GitHub Pages
