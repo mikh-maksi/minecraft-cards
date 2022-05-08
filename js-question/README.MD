@@ -122,3 +122,97 @@ mult2.addEventListener("click", function() {
 |---|---|---|---|---|
 |3|1. Створіть кнопку із написом mult2 та id=mult2, що отримує значення від поля вводу, та повертає значення параметра збільшене вдвічі<br> 2. Створіть кнопку із написом  plus2 та id=plus2, що отримує значення від поля вводу, та повертає значення параметра збільшене на 2 <br> 3. Створіть кнопку із написом minus2 та id=minus2, що отримує значення від поля вводу, та повертає значення параметра зменшене на 2.<br> 4. Створіть кнопку із написом div2 та id=div2, що отримує значення від поля вводу, та повертає значення параметра зменшене вдвічі|<br>&lt;input type="text" id="inpt"><br>&lt;button id="mult2">Mult2&lt;/button><br>&lt;script src="js/js.js">&lt;/script><br>&lt;/body>|mult2.addEventListener("click", function() {<br>var v = Number(inpt.value);<br>alert(v * 2);<br>})|<img src = "img/multfe.gif" width = 500>|
 
+## Творче завдання
+1. Створіть нову папку (наприклад code02), відкрийте її за допомогою **Visual Studio Code** та створіть в ній файл **index.html**, а також папку **js**, а в ній файл **js.js**, а також створіть папку **css**, та в ній файл **style.css**.
+
+2. Додайте коди у відповідні файли:
+**index.html**
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <p id="question"></p><br>
+    <table class="table">
+        <tr>
+            <td><label for="a1" id="label1">A</label></td>
+            <td><label for="a2" id="label2">Б</label></td>
+            <td><label for="a3" id="label3">В</label></td>
+            <td><label for="a4" id="label4">Г</label></td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="question" id="a1"></td>
+            <td><input type="radio" name="question" id="a2"></td>
+            <td><input type="radio" name="question" id="a3"></td>
+            <td><input type="radio" name="question" id="a4"></td>
+        </tr>
+    </table>
+    <button id="btn">Відповісти</button>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
+```
+3. Додайте до файлу **js.js** наступний код
+```js
+let arr = [1, 5, 3, 6, 8, 4, 3];
+let questions = ["Чому дорівнює 2+2==4", ""];
+let answers = [
+    ["3", "4", "5", "true"],
+    ["", "", "", ""]
+]
+let right_answers = [3, ""]
+
+question.innerHTML = questions[0];
+label1.innerHTML = answers[0][0];
+label2.innerHTML = answers[0][1]
+label3.innerHTML = answers[0][2]
+label4.innerHTML = answers[0][3]
+
+btn.addEventListener("click", check);
+
+function check() {
+    n = document.getElementsByName("question");
+    k = 0;
+    n.forEach(element => {
+        if (element.checked) {
+            if (k == right_answers[0]) {
+                alert("Вірно. Секретний блок знакходиться на координаті (0;3;5)");
+            } else {
+                alert("Невірно");
+            }
+        }
+        k++;
+    });
+
+}
+
+arr.forEach(element => {
+    console.log(element);
+});
+
+```
+
+4. Додайте до файлу **style.css** код:
+```css
+*{
+    margin: 0;
+    padding: 0;
+}
+.table td{
+    padding:5px;
+}
+```
+
+## Супертворче завдання
+1. Попередній код завантажте на GitHub Pages
+2. Змініть питання на власне
+3. За умови вірної відповіді - надайте інформацію про певний секрет на вашій мапі в Minecraft.
