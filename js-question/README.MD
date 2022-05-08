@@ -74,6 +74,8 @@ btn1.addEventListener("click", function() { alert("Hello") })
 
 
 ## Функції із параметром
+
+### Minecraft 
 ```js
 player.onChat("mult2", function (num1) {
     player.say(num1 * 2)
@@ -84,3 +86,39 @@ player.onChat("mult2", function (num1) {
 |#|Завдання|Код|Результат|
 |---|---|---|---|
 |2|1. Створіть команду mult2, що отримує параметр, та повертає значення параметра збільшене вдвічі<br> 2. Створіть команду plus2, що отримує параметр, та повертає значення параметра збільшене на 2 <br> 3. Створіть команду minus2, що отримує параметр, та повертає значення параметра зменшене на 2.<br> 4. Створіть команду div2, що отримує параметр, та повертає значення параметра зменшене вдвічі|player.onChat("mult2",function(num1){<br>player.say(num1 * 2)<br>})|<img src = "img/mult201.gif">|
+
+### FrontEnd
+1. Створіть нову папку (наприклад code02), відкрийте її за допомогою **Visual Studio Code** та створіть в ній файл **index.html**, а також папку **js**, а в ній файл **js.js**.
+2. До файлу **index.html** додайте код:
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="inpt">
+    <button id="mult2">Mult2</button>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
+```
+3. До файлу **js.js** додайте код:
+```js
+mult2.addEventListener("click", function() {
+    var v = Number(inpt.value);
+    alert(v * 2);
+})
+```
+ 
+
+
+|#|Завдання|Код HTML|Код JS|Результат|
+|---|---|---|---|---|
+|3|1. Створіть кнопку із написом mult2 та id=mult2, що отримує значення від поля вводу, та повертає значення параметра збільшене вдвічі<br> 2. Створіть кнопку із написом  plus2 та id=plus2, що отримує значення від поля вводу, та повертає значення параметра збільшене на 2 <br> 3. Створіть кнопку із написом minus2 та id=minus2, що отримує значення від поля вводу, та повертає значення параметра зменшене на 2.<br> 4. Створіть кнопку із написом div2 та id=div2, що отримує значення від поля вводу, та повертає значення параметра зменшене вдвічі|<br>&lt;input type="text" id="inpt"><br>&lt;button id="mult2">Mult2&lt;/button><br>&lt;script src="js/js.js">&lt;/script><br>&lt;/body>|mult2.addEventListener("click", function() {<br>var v = Number(inpt.value);<br>alert(v * 2);<br>})|<img src = "img/multfe.gif" width = 500>|
+
