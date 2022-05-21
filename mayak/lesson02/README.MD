@@ -57,6 +57,15 @@
 
 
 
-## Компас на острове  
+## Компас на острове из песка 
 
 <img src = "img/sea09.png" width = "300">  <br>
+
+## Компас на острове из земли с травой
+
+
+<img src = "img/sea11.png" width = "300">  <br>
+<img src = "img/sea13.png" width = "300">  <br>
+<img src = "img/sea10.png" width = "300">  <br>
+<img src = "img/sea12.png" width = "300">  <br>
+
