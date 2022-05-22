@@ -134,3 +134,45 @@ player.onChat("mv1", function () {
 
 
 <img src = "img/move17.gif" width = "300"> 
+
+## Періодичний рух
+Створимо блоки:
+```js
+player.onChat("bl_base", function () {
+    blocks.fill(
+    PLANKS_OAK,
+    world(6, 4, -2),
+    world(6, 4, -7),
+    FillOperation.Replace
+    )
+})
+```
+Запустимо їх періодичний рух: 
+```js
+player.onChat("teleport", function () {
+    for (let index = 0; index < 10; index++) {
+        for (let індекс = 0; індекс <= 4; індекс++) {
+            blocks.clone(
+            world(6 + індекс, 4, -2),
+            world(6 + індекс, 4, -7),
+            world(7 + індекс, 4, -7),
+            CloneMask.Replace,
+            CloneMode.Move
+            )
+            loops.pause(100)
+        }
+        for (let індекс = 0; індекс <= 4; індекс++) {
+            i = 5 - індекс
+            blocks.clone(
+            world(6 + i, 4, -2),
+            world(6 + i, 4, -7),
+            world(5 + i, 4, -7),
+            CloneMask.Replace,
+            CloneMode.Move
+            )
+            loops.pause(100)
+        }
+    }
+})
+
+```
