@@ -84,7 +84,7 @@ player.onChat("mv1", function () {
         CloneMask.Replace,
         CloneMode.Move
         )
-        loops.pause(100)
+
     }
 })
 ```
@@ -114,7 +114,23 @@ player.onChat("clear", function () {
 
 <img src = "img/move14.gif" width = "300"> 
 
-Ми запрограмували рух, але він відбувся настільки швидко, що ми його не помітили. Для того, щоб сповільнити рух використаємо блок "**Пауза**" з меню "**Блоки**". <br>
-<img src = "img/move15.png" width = "600"> <br>
-<img src = "img/move16.png" width = "300"> <br>
+Ми запрограмували рух, але він відбувся настільки швидко, що ми його не помітили. Для того, щоб сповільнити рух використаємо блок "**Пауза**" з меню "**Блоки**". (`loops.pause(100)`) <br>
+
+```js
+let i = 0
+player.onChat("mv1", function () {
+    for (let індекс = 0; індекс <= 3; індекс++) {
+        blocks.clone(
+        world(індекс, 4, 0),
+        world(індекс, 4, 0),
+        world(індекс + 1, 4, 0),
+        CloneMask.Replace,
+        CloneMode.Move
+        )
+
+    }
+})
+```
+
+
 <img src = "img/move17.gif" width = "300"> 
