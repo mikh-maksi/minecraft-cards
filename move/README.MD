@@ -127,7 +127,7 @@ player.onChat("mv1", function () {
         CloneMask.Replace,
         CloneMode.Move
         )
-
+        loops.pause(100)
     }
 })
 ```
