@@ -61,16 +61,56 @@ player.onChat("bt", function () {
 ## Рух
 В минулому завданні ми з вами телепортували смолоскип. Проте, якщо запровадити цикл, то буде відбуватися не просто переміщення, а рух.
 
-<img src = "img/move10.png" width = "300">    <br>
 
-<img src = "img/move11.png" width = "300">   <br>
+
+**Code05**
+```js
+player.onChat("bt", function () {
+    blocks.place(REDSTONE_TORCH, world(0, 4, 0))
+    blocks.place(TNT, world(5, 4, 0))
+})
+```
+
+**Code06**
+
+```js
+let i = 0
+player.onChat("mv1", function () {
+    for (let індекс = 0; індекс <= 3; індекс++) {
+        blocks.clone(
+        world(індекс, 4, 0),
+        world(індекс, 4, 0),
+        world(індекс + 1, 4, 0),
+        CloneMask.Replace,
+        CloneMode.Move
+        )
+        loops.pause(100)
+    }
+})
+```
+
+
+
+
 
 
 <img src = "img/move12.gif" width = "300"> 
 
 Для очищення від результатів вибуху можна заповнити блоками із травою протір, на якому стався вибух:
 
-<img src = "img/move13.png" width = "300">  <br>
+```js
+player.onChat("clear", function () {
+    blocks.fill(
+    GRASS,
+    world(10, 3, 10),
+    world(-10, 3, -10),
+    FillOperation.Replace
+    )
+})
+
+```
+
+
 <img src = "img/move14.gif" width = "300"> 
 
 Ми запрограмували рух, але він відбувся настільки швидко, що ми його не помітили. Для того, щоб сповільнити рух використаємо блок "**Пауза**" з меню "**Блоки**". <br>
