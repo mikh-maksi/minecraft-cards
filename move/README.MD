@@ -98,6 +98,7 @@ player.onChat("mv1", function () {
 
 Для очищення від результатів вибуху можна заповнити блоками із травою протір, на якому стався вибух:
 
+**Code07**
 ```js
 player.onChat("clear", function () {
     blocks.fill(
