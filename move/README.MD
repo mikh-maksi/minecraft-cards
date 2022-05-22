@@ -149,6 +149,7 @@ player.onChat("bl_base", function () {
 ```
 Запустимо їх періодичний рух: 
 ```js
+let i = 0
 player.onChat("teleport", function () {
     for (let index = 0; index < 10; index++) {
         for (let індекс = 0; індекс <= 4; індекс++) {
@@ -176,3 +177,5 @@ player.onChat("teleport", function () {
 })
 
 ```
+
+<img src = "img/move23.gif" width = "300"> 
