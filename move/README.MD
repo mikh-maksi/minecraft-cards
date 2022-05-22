@@ -31,9 +31,28 @@ player.onChat("mv", function () {
 
 ## Телепортація із результатом
 
-<img src = "img/move07.png" width = "300">  <br> 
+**Code 03**
+```js
+player.onChat("m", function () {
+    blocks.clone(
+    world(0, 4, 0),
+    world(0, 4, 0),
+    world(1, 4, 0),
+    CloneMask.Replace,
+    CloneMode.Move
+    )
+})
+```
 
-<img src = "img/move08.png" width = "300">   <br>
+**Code04**
+```js
+player.onChat("bt", function () {
+    blocks.place(REDSTONE_TORCH, world(0, 4, 0))
+    blocks.place(TNT, world(5, 4, 0))
+})
+```
+
+
 
 <img src = "img/move09.gif" width = "300">  
 
