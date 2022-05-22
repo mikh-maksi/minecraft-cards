@@ -53,7 +53,6 @@ player.onChat("bt", function () {
 ```
 
 
-
 <img src = "img/move09.gif" width = "300">  
 
 ### Творче завдання:
