@@ -35,8 +35,8 @@ player.onChat("target", function () {
 
 <img src = "img/move-target07.png">  
 
-Відійдіть на значну дистанцію та влучте в існуючу кнопку.
-<img src = "img/move-target08.gif">
+Відійдіть на значну дистанцію та влучте в існуючу кнопку.  
+<img src = "img/move-target08.gif">  
 
 
 
