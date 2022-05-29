@@ -42,3 +42,15 @@
 <img src = "img/move15.png" width = "600"> <br>
 <img src = "img/move16.png" width = "300"> <br>
 <img src = "img/move17.gif" width = "300"> 
+
+
+## Періодичний рух
+Створимо блоки:  
+<img src = "img/move23.png" width = "300">  
+
+Запустимо їх періодичний рух:  
+<img src = "img/move24.png" width = "300">  
+
+Отримаємо результат:  
+<img src = "img/move25.gif">  
+
