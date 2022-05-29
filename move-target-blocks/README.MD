@@ -1,22 +1,6 @@
 # Пересування мішені
 ## Створимо установку з фейерверків!
-```js
-player.onChat("target", function () {
-    agent.teleport(world(20, 5, -10), WEST)
-    agent.setItem(DISPENSER, 1, 1)
-    agent.setItem(PLANKS_OAK, 1, 2)
-    agent.setItem(DARK_OAK_BUTTON, 1, 3)
-    agent.setSlot(1)
-    agent.place(DOWN)
-    agent.move(BACK, 1)
-    agent.setSlot(2)
-    agent.place(DOWN)
-    agent.move(BACK, 1)
-    agent.move(DOWN, 1)
-    agent.setSlot(3)
-    agent.place(FORWARD)
-})
-```
+<img src = "img/move-target10.png"  width = "600">
 
 <img src = "img/move-target01.png">
 
@@ -43,33 +27,9 @@ player.onChat("target", function () {
 
 ## Мішень, що рухається
 Запустимо пересування створеної мішені
-```js
-player.onChat("tprt", function () {
-    for (let index = 0; index < 10; index++) {
-        for (let i = 0; i <= 4; i++) {
-            blocks.clone(
-            world(19, 4, i - 10),
-            world(22, 4, i - 10),
-            world(19, 4, i - 9),
-            CloneMask.Replace,
-            CloneMode.Move
-            )
-            loops.pause(1000)
-        }
-        for (let j = 0; j <= 4; j++) {
-            i = 5 - j
-            blocks.clone(
-            world(19, 4, i - 10),
-            world(22, 4, i - 10),
-            world(19, 4, i - 11),
-            CloneMask.Replace,
-            CloneMode.Move
-            )
-            loops.pause(1000)
-        }
-    }
-})
-```
+<img src = "img/move-target11.png" width = "600">
+
+
 Для зміни швикості: змініть значення команди **loops.pause(1000)**
 
 <img src = "img/move-target09.gif">
