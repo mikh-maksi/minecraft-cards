@@ -41,4 +41,41 @@ player.onChat("target", function () {
 
 
 
-2. З
+## Мішень, що рухається
+Запустимо пересування створеної мішені
+```js
+player.onChat("tprt", function () {
+    for (let index = 0; index < 10; index++) {
+        for (let i = 0; i <= 4; i++) {
+            blocks.clone(
+            world(19, 4, i - 10),
+            world(22, 4, i - 10),
+            world(19, 4, i - 9),
+            CloneMask.Replace,
+            CloneMode.Move
+            )
+            loops.pause(1000)
+        }
+        for (let j = 0; j <= 4; j++) {
+            i = 5 - j
+            blocks.clone(
+            world(19, 4, i - 10),
+            world(22, 4, i - 10),
+            world(19, 4, i - 11),
+            CloneMask.Replace,
+            CloneMode.Move
+            )
+            loops.pause(1000)
+        }
+    }
+})
+```
+Для зміни швикості: змініть значення команди **loops.pause(1000)**
+
+<img src = "img/move-target09.gif">
+
+## Творче завдання
+Створіть 3-4 мішені, що рухаються в різних місцях карти. Потренуйтеся влучати в такі мішені на швидкість.
+
+ 
+
