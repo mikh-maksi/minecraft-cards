@@ -24,7 +24,7 @@ https://makecode.com/_fpiF35PCsKEP
 <img src = "img/rose-up_01.png" width = 500><br>
 <img src = "img/rose-up_02.png" width = 500><br>
 <img src = "img/rose-up_03.png" width = 500><br>
-
+    
 
 ## Море
 #|Задания|Код|Результат|
