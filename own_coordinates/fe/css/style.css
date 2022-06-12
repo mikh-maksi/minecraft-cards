@@ -1,0 +1,23 @@
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    border: 1px solid black;
+    position: relative;
+    width: 550px;
+    height: 550px;
+}
+
+.wrapper div {
+    background: rgba(0, 0, 255, 0.3);
+    border: 1px solid black;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
