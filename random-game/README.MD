@@ -101,8 +101,44 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 ```
 
 ## Час
-Також ми можемо "навчити" нашу гру не тільки рахувати бали за кожне успішне знищення блоку, але й віднімати бали за знищення трави, а також - рахувати час, який гравець витратив на "
+Також ми можемо "навчити" нашу гру не тільки рахувати бали за кожне успішне знищення блоку, але й віднімати бали за знищення трави, а також - рахувати час, який гравець витратив на "виконання місії"
 ```js
-
+let result = 0
+let time = 0
+let n = 0
+function check (point: number) {
+    if (point >= 10) {
+        result = gameplay.timeQuery(GAME_TIME) - time
+        gameplay.title(mobs.target(NEAREST_PLAYER), "Перемога!" + result, "Ви набрали необхідну кількість балів!!!")
+        n = 0
+        time = gameplay.timeQuery(GAME_TIME)
+    }
+}
+blocks.onBlockBroken(PLANKS_OAK, function () {
+    blocks.place(PLANKS_OAK, world(randint(0, 10), 4, randint(0, 10)))
+    n += 1
+    player.say(n)
+    gameplay.title(mobs.target(NEAREST_PLAYER), "" + n, "")
+    check(n)
+})
+blocks.onBlockBroken(GRASS, function () {
+    n += -1
+    gameplay.title(mobs.target(NEAREST_PLAYER), "" + n, "")
+})
+player.onChat("start", function () {
+    blocks.place(PLANKS_OAK, world(randint(0, 10), 4, randint(0, 10)))
+    n = 0
+    time = gameplay.timeQuery(GAME_TIME)
+})
 
 ```
+
+## FrontEnd ігри
+Щось аналогічне можна використати і в сфері FrontEnd.
+Для сьогодня спробуйте скачати, зкорегувати, та завантажити на власний репозитарій невеличку FrontEnd-гру:  
+https://mikh-maksi.github.io/game/  
+
+https://github.com/mikh-maksi/game  
+
+## Скачування та розгортання власної версії:
+
