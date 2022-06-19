@@ -71,3 +71,31 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 2. При старті розміщуйте блок в точці (0;4;0), при знищенні - в випадковому місці між координатами (-5;4;-5) до (5;4;5)
 3. За кожен знищенний блок нараховуйте по 2 бали.
 4. При команді **start** - виведіть правила гри на екран (за допомогою команди **gameplay.title(mobs.target(NEAREST_PLAYER), "Заголовок" , "Підзаголовк")** , або за допомогою команди **player.say("Повідмлення")**)
+
+
+## Перевірка умов перемоги
+Для того, щоб у гри була кінцева мета, додамо перевірку кількість балів яку вже набрав гравець. Якщо кількість балів буде дорівнювати або більшою за 10 - напишемо на екрані "Перемога!" за скинумо лічільник балів на 0. Для цього використаємо функцію check.
+
+```js
+
+player.onChat("start", function () {
+    blocks.place(PLANKS_OAK, world(randint(0, 10), 4, randint(0, 10)))
+    n = 0
+})
+
+function check (point: number) {
+    if (point >= 10) {
+        gameplay.title(mobs.target(NEAREST_PLAYER), "Перемога!!!", "")
+        n = 0
+    }
+}
+blocks.onBlockBroken(PLANKS_OAK, function () {
+    blocks.place(PLANKS_OAK, world(randint(0, 10), 4, randint(0, 10)))
+    n += 1
+    player.say(n)
+    gameplay.title(mobs.target(NEAREST_PLAYER), "" + n, "")
+    check(n)
+})
+
+
+```
