@@ -152,7 +152,12 @@ player.onChat("labirint8", function () {
 
 ## Проходи між рівнями в лабірінті
 ### Прохід у 1-му контурі (внутрішньому)
-<img src = "img/space2.png" width = "600">  
+```js
+player.onChat("space2", function () {
+    blocks.place(AIR, world(-2, 4, -1))
+    blocks.place(AIR, world(-2, 5, -1))
+})
+```
 <img src = "img/space2_view.png" width = "600">
 
 ### Прохід у 2-му контурі
@@ -234,16 +239,46 @@ player.onChat("overlap8", function () {
 
 ## Використання циклів
 Попереднє завдання займає багато блоків. І якщо його переписати (на мові програмістів це називається *рефакторінг*) із використанням циклів, то можно значно скоротити кількість блоків.
+```js
+player.onChat("labirint_c2", function () {
+    mat = PLANKS_OAK
+    for (let індекс2 = 0; індекс2 <= 3; індекс2++) {
+        n = 2 * (індекс2 + 1)
+        blocks.fill(
+        mat,
+        world(n, 4, n),
+        world(n, 5, 0 - n),
+        FillOperation.Replace
+        )
+        blocks.fill(
+        mat,
+        world(n, 4, 0 - n),
+        world(0 - n, 5, 0 - n),
+        FillOperation.Replace
+        )
+        blocks.fill(
+        mat,
+        world(0 - n, 4, 0 - n),
+        world(0 - n, 5, n),
+        FillOperation.Replace
+        )
+        blocks.fill(
+        mat,
+        world(0 - n, 4, n),
+        world(n, 5, n),
+        FillOperation.Replace
+        )
+    }
+})
 
-<img src = "img/labirint10.png">  
-<img src = "img/labirint_c2.png">  
+
+```
 <img src = "img/labirint_c2_view.png">  
 
 
 ### Додаткове завдання
-Окрім того, що ми використвуємо цикли ми можемо в залежності від номеру проходу циклу (значення змінної **index**) змінювати матеріал з якого робимо відповідні елементи.
+* Запрограмуйте створення вкладених квадратів так, щоб в них чередувалися кольори:
 
-<img src = "img/labirint_c3.png">  
 <img src = "img/labirint_c3_view.png"> 
 
 
