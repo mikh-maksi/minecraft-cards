@@ -35,7 +35,6 @@ player.onChat("labirint2", function () {
 
 
 ```
-<img src = "img/labirint2.png" width = "300">  
 <img src = "img/labirint04.png" width = "600">  
 
 
@@ -69,7 +68,6 @@ player.onChat("labirint4", function () {
 })
 
 ```
-<img src = "img/labirint4.png" width = "300">  
 <img src = "img/labirint05.png" width = "600">  
 
 ### Внутрішній блок 3.
@@ -103,7 +101,6 @@ player.onChat("labirint6", function () {
 
 ```
 
-<img src = "img/labirint6.png" width = "300">  
 <img src = "img/labirint06.png" width = "600">  
 
 
@@ -136,12 +133,12 @@ player.onChat("labirint8", function () {
     )
 })
 ```
-<img src = "img/labirint8.png" width = "300">  
 <img src = "img/labirint07.png" width = "600">  
 
 
 ### Творчі завдання
-1. Зробіть заготовку для лабіринту із 4-х квадратів різними кольорами елементів:
+1. Зробіть заготовку для лабіринту із 4-х квадратів різними кольорами елементів:  
+
 <img src = "img/labirint08.png" width = "600">
 
 2. Зробіть заготовку лабіринту із 4-х квадратів навколо точки (20;4;20)
@@ -159,15 +156,34 @@ player.onChat("labirint8", function () {
 <img src = "img/space2_view.png" width = "600">
 
 ### Прохід у 2-му контурі
-<img src = "img/space4.png" width = "600">  
+```js
+player.onChat("space4", function () {
+    blocks.place(AIR, world(4, 4, 2))
+    blocks.place(AIR, world(4, 5, 2))
+})
+
+```
 <img src = "img/space4_view.png" width = "600">
 
 ### Прохід у 3-му контурі
-<img src = "img/space6.png" width = "600">  
+```js
+player.onChat("space6", function () {
+    blocks.place(AIR, world(6, 4, 5))
+    blocks.place(AIR, world(6, 5, 5))
+})
+
+```
+
 <img src = "img/space6_view.png" width = "600">
 
 ### Прохід у 4-му контурі (зовнішньому)
-<img src = "img/space8.png" width = "600">  
+```js
+player.onChat("space8", function () {
+    blocks.place(AIR, world(-7, 4, -8))
+    blocks.place(AIR, world(-7, 5, -8))
+})
+
+```
 <img src = "img/space8_view.png" width = "600">
 
 ### Творчі завдання
@@ -179,19 +195,40 @@ player.onChat("labirint8", function () {
 Для того, щоб лабіринт був більш складним - закриємо наскрізний прохід по кожному з контурів.
 
 ### Загородження у 1-му контурі (внутрішньому)
-<img src = "img/overlap2.png" width = "600">  
+```js
+player.onChat("overlap2", function () {
+    blocks.place(PLANKS_OAK, world(0, 4, 3))
+    blocks.place(PLANKS_OAK, world(0, 5, 3))
+})
+```
 <img src = "img/overlap2_view.png" width = "600">
 
 ### Загородження у 2-му контурі
-<img src = "img/overlap4.png" width = "600">  
+```js
+player.onChat("overlap4", function () {
+    blocks.place(PLANKS_OAK, world(0, 4, 3))
+    blocks.place(PLANKS_OAK, world(0, 5, 3))
+})
+```
 <img src = "img/overlap4_view.png" width = "600">
 
 ### Загородження у 3-му контурі
-<img src = "img/overlap6.png" width = "600">  
+```js
+player.onChat("overlap6", function () {
+    blocks.place(PLANKS_OAK, world(5, 4, 3))
+    blocks.place(PLANKS_OAK, world(5, 5, 3))
+})
+```
 <img src = "img/overlap6_view.png" width = "600">
 
 ### Загородження у 4-му контурі (зовнішньому)
-<img src = "img/overlap8.png" width = "600">  
+```js
+player.onChat("overlap8", function () {
+    blocks.place(PLANKS_OAK, world(-1, 4, 7))
+    blocks.place(PLANKS_OAK, world(-1, 5, 7))
+})
+```
+
 <img src = "img/overlap8_view.png" width = "600">
 
 
