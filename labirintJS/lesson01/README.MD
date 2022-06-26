@@ -240,6 +240,8 @@ player.onChat("overlap8", function () {
 ## Використання циклів
 Попереднє завдання займає багато блоків. І якщо його переписати (на мові програмістів це називається *рефакторінг*) із використанням циклів, то можно значно скоротити кількість блоків.
 ```js
+let mat = 0
+let n = 0
 player.onChat("labirint_c2", function () {
     mat = PLANKS_OAK
     for (let індекс2 = 0; індекс2 <= 3; індекс2++) {
@@ -296,12 +298,26 @@ player.onChat("labirint_c2", function () {
 <img src = "img/labirint14.png">  
 <img src = "img/labirint15.png">  
 Додайте відповідний блок команд для створення проходу в Майнкрафті:  
-<img src = "img/labirint16.png">
+
+```js
+player.onChat("space2", function () {
+    blocks.place(AIR, world(-2, 4, -1))
+    blocks.place(AIR, world(-2, 5, -1))
+})
+```
+
+
 Загороження на рівнях позначте фіолетовим фоном ячійок
 <img src = "img/labirint17.png">
 <img src = "img/labirint18.png">
 Додайте відповідний блок команд для створення проходу в Майнкрафті:  
-<img src = "img/labirint19.png">
+
+```js
+player.onChat("overlap2", function () {
+    blocks.place(PLANKS_OAK, world(0, 4, 3))
+    blocks.place(PLANKS_OAK, world(0, 5, 3))
+})
+```
 
 
 
@@ -312,5 +328,30 @@ player.onChat("labirint_c2", function () {
 3. Сформуйте план лабіринту та ствооріть Лабірінт з 5-и контурів.
 
 ## Прохід лабіринту агентом
-<img src = "img/labirint21.png">  
-<img src = "img/labirint22.png">
+```js
+player.onItemInteracted(DIAMOND_SHOVEL, function () {
+    agent.turn(RIGHT_TURN)
+})
+
+player.onItemInteracted(STONE_SHOVEL, function () {
+    agent.destroy(FORWARD)
+})
+
+player.onItemInteracted(IRON_SHOVEL, function () {
+    agent.move(FORWARD, 1)
+})
+
+player.onItemInteracted(GOLDEN_SHOVEL, function () {
+    agent.turn(LEFT_TURN)
+})
+
+player.onChat("start", function () {
+    agent.teleport(world(-7, 4, -9), SOUTH)
+    blocks.place(SANDSTONE, world(0, 4, 0))
+})
+
+```
+
+
+<img src = "img/labirint21.png" width = "300">  
+<img src = "img/labirint22.png" width = "300">
