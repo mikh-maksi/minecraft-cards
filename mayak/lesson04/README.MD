@@ -14,11 +14,11 @@
 ### Магія від маяка
 Маяки в Майнкрафті дозволяють використовувати магію. Для цього треба натиснити правою клавішею миші на сам маяк та надати золотий злиток/алмаз/ізумруд в обмін на початок дії певного магічного впливу (сила, швидкіть, стрибок, тощо).
 
-<img src = "img/magic01.png" width = "300"><br>
-<img src = "img/magic02.png" width = "300"><br>
-<img src = "img/magic03.png" width = "300"><br>
-<img src = "img/magic04.png" width = "300"><br>
-<img src = "img/magic05.png" width = "300"><br>
+<img src = "img/magic01.png" width = "300"> 
+<img src = "img/magic02.png" width = "300"> 
+<img src = "img/magic03.png" width = "300"> 
+<img src = "img/magic04.png" width = "300"> 
+<img src = "img/magic05.png" width = "300"> 
 
 ### Очищення створених об'єктів
 Для того, щоб очистити обїєкт необхідно замість його блоків розмістити блоки повітря.
